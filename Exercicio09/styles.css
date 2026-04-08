@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.descricao {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contador {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Animação aplicada ao <time> */
+time {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+
+    animation: piscar 1s infinite;
+}
+
+/* Keyframes da animação */
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.recursos {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.recursos li {
+    margin: 5px 0;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background: #00ccaa;
+}
