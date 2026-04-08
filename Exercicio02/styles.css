@@ -1,0 +1,17 @@
+.imagem{
+    
+    border-radius: 10%;
+}
+.imagem {
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(135deg, #010a34, #525252);
+    color: white;
+}
+
+body {
+    text-align: center;
+}
