@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+.imagens{
+    width: 300px;
+    height: 300px;
+}
+
 .testemunho {
     background: white;
     padding: 15px;
@@ -19,14 +24,8 @@ body {
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.testemunho img {
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Aplicando font-style no blockquote */
 blockquote {
     font-style: italic;
-    color: #555;
+    color: #6d6969;
     margin: 10px 0;
 }
