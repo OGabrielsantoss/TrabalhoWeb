@@ -1,0 +1,82 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+    color: #333;
+}
+
+.titulo {
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.produto-card {
+    background: #ffffff;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.produto-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.produto-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.precos {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+del {
+    color: #e74c3c; 
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
