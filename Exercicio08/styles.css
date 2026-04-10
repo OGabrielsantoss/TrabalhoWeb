@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5%;
+    min-height: 100vh;
+    padding: 20px;   
 }
 
 .card-produto {
@@ -21,7 +22,7 @@ body {
     border-radius: 24px; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
     max-width: 750px;
-    width: 90%;
+    width: 100%; 
 }
 
 .titulo {
@@ -49,11 +50,12 @@ body {
 }
 
 .moldura-imagem img {
-    max-width: 280px;
+    max-width: 100%;
     height: auto;
 }
 
 .info {
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,3 +95,46 @@ button:hover {
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
+
+@media (max-width: 768px) {
+    .card-produto {
+        padding: 25px; 
+    }
+
+    .titulo {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .conteudo-principal {
+        flex-direction: column; 
+        gap: 25px;
+    }
+
+    .moldura-imagem img {
+        max-width: 220px; 
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 22px;
+    }
+
+    .preco {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+}

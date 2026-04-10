@@ -18,6 +18,7 @@ body {
 .galeria {
     display: flex;       
     justify-content: center;
+    flex-wrap: wrap; 
     gap: 30px;          
     padding: 20px;
 }
@@ -29,16 +30,17 @@ figure {
     padding: 10px;
     border-radius: 12px; 
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease; 
 }
 
 figure:hover {
     transform: translateY(-10px); 
     box-shadow: 0 15px 30px rgba(0,0,0,0.8);
-    border-color: #fff;
 }
 
 figure img {
-    width: 380px;         
+    width: 100%; 
+    max-width: 380px; 
     height: 250px;      
     object-fit: cover;   
     display: block;      
@@ -56,6 +58,7 @@ figcaption {
 .galeria a {
     text-decoration: none;
 }
+
 
 .tela-cheia {
     display: none;        
@@ -77,11 +80,10 @@ figcaption {
 
 .tela-cheia img {
     max-width: 90vw;       
-    max-height: 80vh;     
+    max-height: 70vh; 
     object-fit: contain;  
     border: 5px solid white;
     border-radius: 10px;
-    box-shadow: 0 0 50px rgba(255,255,255,0.2);
 }
 
 .fechar {
@@ -95,6 +97,36 @@ figcaption {
     font-weight: bold;
 }
 
-.fechar:hover {
-    background: #c0392b;
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+
+    .galeria {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    figure {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    figure img {
+        height: auto; 
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .fechar {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    figure:hover {
+        transform: none;
+    }
 }
