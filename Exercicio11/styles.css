@@ -10,8 +10,9 @@ body {
     margin: auto;
 }
 
-h1 {
+.titulo{
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .mapa {
@@ -24,11 +25,8 @@ h1 {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
-
-    /* Aplicação do text-indent */
     text-indent: 10px;
 }
-
 
 .mapa ul {
     margin-top: 5px;
