@@ -17,7 +17,10 @@ body {
 .container-flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
     gap: 24px;
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 .cartao {
@@ -28,6 +31,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border: 1px solid #e2e8f0;
+    box-sizing: border-box; 
 }
 
 .cartao img {
@@ -57,4 +61,31 @@ body {
 .bio {
     font-size: 14px;
     color: #64748b;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .cartao {
+        width: 100%; 
+        max-width: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container-flex {
+        gap: 16px; 
+    }
+
+    .nome {
+        font-size: 18px;
+    }
 }

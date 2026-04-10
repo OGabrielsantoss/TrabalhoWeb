@@ -10,6 +10,7 @@ body {
     max-width: 900px; 
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box; 
 }
 
 .cabecalho {
@@ -22,6 +23,7 @@ body {
     color: #00f2fe;
     margin: 0;
     font-size: 2.5rem;
+    line-height: 1.2;
 }
 
 .timer {
@@ -31,7 +33,6 @@ body {
     margin-top: 15px;
     font-weight: bold;
     animation: pulsar 2s infinite;
-    margin-left: 1%; 
 }
 
 @keyframes pulsar {
@@ -41,7 +42,7 @@ body {
 
 .product-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 30px;
     margin: 50px 0;
     justify-content: center;
@@ -52,7 +53,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; 
+    flex: 1;
+    min-width: 300px;
 }
 
 .product-image img {
@@ -70,6 +72,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    min-width: 300px;
 }
 
 .subtitulo {
@@ -80,7 +83,6 @@ body {
 .features ul {
     list-style: none;
     padding: 0;
-    text-align: left;
 }
 
 .features li {
@@ -100,7 +102,9 @@ body {
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-sizing: border-box;
 }
+
 .terceiro-titulo{
     margin-top: 0;
     color: #f8fafc;
@@ -139,4 +143,47 @@ button:hover {
     padding: 40px 20px;
     font-size: 0.85rem;
     color: #94a3b8;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem; 
+    }
+
+    .cabecalho {
+        padding: 40px 15px;
+    }
+
+    .product-info {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .features {
+        text-align: center; 
+    }
+
+    .features ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.6rem; 
+    }
+
+    .timer {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .card-form {
+        padding: 20px;
+        width: 100%; 
+    }
 }

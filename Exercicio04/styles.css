@@ -5,12 +5,10 @@ body {
   text-align: center; 
 }
 
-
-.titulo{
+.titulo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: black;  
 }
-
 
 header {
   padding: 20px;
@@ -31,6 +29,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left; 
 }
 
 .data {
@@ -46,4 +45,34 @@ header {
 
 .blog-lista a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .blog-lista {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .blog-lista {
+    padding: 10px;
+  }
+
+  .blog-lista li {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .blog-lista h2 { 
+    font-size: 1.1rem;
+  }
 }

@@ -3,17 +3,22 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   text-align: center;
+  padding: 10px; 
 }
 
 .titulo {
-  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 }
 
 .faq {
   max-width: 600px;
   margin: auto;
   padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 details {
@@ -22,12 +27,10 @@ details {
   padding: 15px;
   border-radius: 12px;
   cursor: pointer;
-
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
   transition: all 0.3s ease;
+  text-align: left; 
 }
-
 
 details[open] {
   background-color: #f9f9f9;
@@ -36,9 +39,41 @@ details[open] {
 summary {
   font-weight: bold;
   font-size: 18px;
+  outline: none; 
 }
 
 details p {
   margin-top: 10px;
   color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 1.5rem;
+    margin-left: 0; 
+  }
+
+  .faq {
+    padding: 5px;
+  }
+
+  summary {
+    font-size: 16px; 
+  }
+
+  details {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  summary {
+    font-size: 15px;
+  }
+  
+  details p {
+    font-size: 14px;
+  }
 }
