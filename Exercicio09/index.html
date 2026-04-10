@@ -1,62 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançamento do Produto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Tarefas</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Novo Smartphone X</h1>
+    <div class="todo-card">
+        <h2 class="titulo">Tarefas</h2>
 
-        <img src="https://via.placeholder.com/300x200" alt="Produto">
-
-        <p class="descricao">
-            Um smartphone inovador com câmera incrível, bateria de longa duração e desempenho ultrarrápido.
-        </p>
-
-        <!-- Contagem regressiva -->
-        <div class="contador">
-            Lançamento em:
-            <time id="tempo">00:00:00</time>
+        <div class="add-section">
+            <input type="text" placeholder="Inserir tarefa...">
+            <button class="btn-add">Adicionar</button>
         </div>
 
-        <!-- Recursos -->
-        <ul class="recursos">
-            <li>📸 Câmera 108MP</li>
-            <li>🔋 Bateria de 5000mAh</li>
-            <li>⚡ Carregamento rápido</li>
+        <ul class="task-list">
+            <li>
+                <input type="checkbox" id="task1">
+                <label for="task1">Estudar HTML e CSS</label>
+                <div class="actions">
+                    <button class="btn-edit">Editar</button>
+                    <button class="btn-delete">Excluir</button>
+                </div>
+            </li>
+
+            <li class="done">
+                <input type="checkbox" id="task2" checked>
+                <label for="task2">Comprar café</label>
+                <div class="actions">
+                    <button class="btn-edit">Editar</button>
+                    <button class="btn-delete">Excluir</button>
+                </div>
+            </li>
         </ul>
-
-        <!-- Formulário -->
-        <form class="formulario">
-            <input type="email" placeholder="Digite seu email" required>
-            <button type="submit">Pré-venda</button>
-        </form>
     </div>
-
-    <script>
-        // Data de lançamento (exemplo)
-        const dataLancamento = new Date("2026-12-31 00:00:00").getTime();
-
-        const tempoEl = document.getElementById("tempo");
-
-        setInterval(() => {
-            const agora = new Date().getTime();
-            const distancia = dataLancamento - agora;
-
-            const horas = Math.floor((distancia / (1000 * 60 * 60)) % 24);
-            const minutos = Math.floor((distancia / (1000 * 60)) % 60);
-            const segundos = Math.floor((distancia / 1000) % 60);
-
-            tempoEl.innerHTML =
-                String(horas).padStart(2, '0') + ":" +
-                String(minutos).padStart(2, '0') + ":" +
-                String(segundos).padStart(2, '0');
-        }, 1000);
-    </script>
 
 </body>
 </html>
