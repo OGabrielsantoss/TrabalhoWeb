@@ -8,112 +8,112 @@ Cada exercício foi desenvolvido com o objetivo de consolidar o aprendizado prá
 
 ---
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 Os exercícios estão organizados em pastas individuais:
 
 
 ---
 
-### [Exercicio1](./Exercicio01/)
+### [Exercício1](./Exercicio01/index.html)
 - **Tag HTML:** `<h1>`
 - **CSS:** `background-image`  
 Página com título principal, texto introdutório e imagem de fundo.
 
 ---
 
-### [Exercicio2](./Exercicio03/)
+### [Exercício2](./Exercicio02/index.html)
 - **Tag HTML:** `<img>`
 - **CSS:** `border-radius`  
 Perfil pessoal com foto, nome, descrição e redes sociais.
 
 ---
 
-### [Exercicio3](./Exercicio03/)
+### [Exercício3](./Exercicio03/index.html)
 - **Tag HTML:** `<div>`
 - **CSS:** `grid`  
 Layout em grade exibindo imagens dos exercícios.
 
 ---
 
-### [Exercicio4](./Exercicio04/)
+### [Exercício4](./Exercicio04/index.html)
 - **Tag HTML:** `<ul>`
 - **CSS:** `list-style`  
 Lista de postagens com título, data e resumo.
 
 ---
 
-### [Exercicio5](./Exercicio05/)
+### [Exercício5](./Exercicio05/index.html)
 - **Tag HTML:** `<form>`
 - **CSS:** `box-shadow`  
 Formulário de contato estilizado com sombra.
 
 ---
 
-### [Exercicio6](./Exercicio06/)
+### [Exercício6](./Exercicio06/index.html)
 - **Tag HTML:** `<details>`
 - **CSS:** `transition`  
 Perguntas e respostas com efeito de expansão animada.
 
 ---
 
-### [Exercicio7](./Exercicio07/)
+### [Exercício7](./Exercicio07/index.html)
 - **Tag HTML:** `<input>`
 - **CSS:** `border`  
 Campos de login (usuário e senha) estilizados.
 
 ---
 
-### [Exercicio8](./Exercicio08/)
+### [Exercício8](./Exercicio08/index.html)
 - **Tag HTML:** `<button>`
 - **CSS:** `box-sizing`  
 Página com imagem, descrição, preço e botão de compra.
 
 ---
 
-### [Exercicio9](./Exercicio09/)
+### [Exercício9](./Exercicio09/index.html)
 - **Tag HTML:** `<input>`
 - **CSS:** `text-decoration`  
 Lista de tarefas com opção de marcar como concluída.
 
 ---
 
-### [Exercicio10](./Exercicio01/)
+### [Exercício10](./Exercicio10/index.html)
 - **Tag HTML:** `<blockquote>`
 - **CSS:** `font-style`  
 Depoimentos de clientes com destaque no texto.
 
 ---
 
-### [Exercicio11](./Exercicio11/)
+### [Exercício11](./Exercicio11/index.html)
 - **Tag HTML:** `<ul>`
 - **CSS:** `text-indent`  
 Estrutura hierárquica das páginas do site.
 
 ---
 
-### [Exercicio12](./Exercicio12/)
+### [Exercício12](./Exercicio12/index.html)
 - **Tag HTML:** `<figure>`
 - **CSS:** `display`  
 Galeria de imagens com miniaturas.
 
 ---
 
-### [Exercicio13](./Exercicio13/)
+### [Exercício13](./Exercicio13/index.html)
 - **Tag HTML:** `<del>`
 - **CSS:** `color`  
 Produtos com preço original riscado e valor promocional.
 
 ---
 
-### [Exercicio14](./Exercicio14/)
+### [Exercício14](./Exercicio14/index.html)
 - **Tag HTML:** `<div>`
 - **CSS:** `flex`  
 Layout flexível com membros da equipe.
 
 ---
 
-### [Exercicio15](./Exercicio15/)
+### [Exercício15](./Exercicio15/index.html)
 - **Tag HTML:** `<time>`
 - **CSS:** `animation`  
 Página com contagem regressiva animada.
