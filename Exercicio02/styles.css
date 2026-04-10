@@ -1,17 +1,56 @@
-.imagem{
-    
-    border-radius: 10%;
-}
-.imagem {
-    display: block;
-    margin: 0 auto;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
-body {
-    background: linear-gradient(135deg, #010a34, #525252);
+.titulo{
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10%;
+    margin-top: 15%;
 }
 
-body {
-    text-align: center;
+.desc{
+    color: rgb(153, 153, 153);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10%;
+    margin-inline-end: 50%;
+}
+
+.imagem{
+    width: 350px;       
+    height: 350px;      
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-left: 65%;
+    margin-top: -13%;
+}
+
+.insta{
+    width: 60px;
+    height: 60px;
+    margin-left: 10%;
+}
+
+.redesSociais{
+    display: flex;          
+    gap: 25px;              
+    margin-left: 10%;       
+    margin-top: -3%;
+}
+
+.insta {
+    width: 65px; 
+    height: 65px;
+}
+
+.linkedin {
+    width: 65px; 
+    height: 65px;
+}
+
+.github {
+    width: 65px; 
+    height: 65px;
 }

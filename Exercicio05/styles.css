@@ -3,23 +3,22 @@ body {
   background-color: #f4f4f4;
   margin: 0;
 
-  /* Centraliza tudo */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
+.titulo {
   margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 .formulario {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   width: 300px;
-
 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -29,14 +28,14 @@ h1 {
 .formulario textarea {
   width: 100%;
   margin-bottom: 10px;
+  margin-top: 3px;
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-
 .formulario button {
-  width: 100%;
+  width: 105.5%;
   padding: 10px;
   background-color: #333;
   color: white;

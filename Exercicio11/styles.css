@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mapa {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mapa li {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* Aplicação do text-indent */
+    text-indent: 10px;
+}
+
+
+.mapa ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
